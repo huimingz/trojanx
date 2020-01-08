@@ -1,0 +1,48 @@
+
+/* Class = "NSMenuItem"; title = "Auto Mode By PAC"; ObjectID = "Ce8-xR-7Tu"; */
+"Ce8-xR-7Tu.title" = "Auto Mode By PAC";
+
+/* Class = "NSMenuItem"; title = "Help"; ObjectID = "Fbt-jf-Jyn"; */
+"Fbt-jf-Jyn.title" = "Help";
+
+/* Class = "NSMenuItem"; title = "Turn Trojan On"; ObjectID = "HG8-Xf-7Ap"; */
+"HG8-Xf-7Ap.title" = "Turn Trojan On";
+
+/* Class = "NSMenuItem"; title = "SOCKS Proxy Export Line To PasteBoard"; ObjectID = "Qez-oZ-Yfc"; */
+"Qez-oZ-Yfc.title" = "SOCKS Proxy Export Line To PasteBoard";
+
+/* Class = "NSMenuItem"; title = "Servers"; ObjectID = "ULg-Ih-yFn"; */
+"ULg-Ih-yFn.title" = "Servers";
+
+/* Class = "NSMenu"; title = "Servers"; ObjectID = "VMB-nl-vfS"; */
+"VMB-nl-vfS.title" = "Servers";
+
+/* Class = "NSMenuItem"; title = "Server Preferences"; ObjectID = "XuO-fk-bud"; */
+"XuO-fk-bud.title" = "Server Preferences";
+
+/* Class = "NSMenuItem"; title = "Quit"; ObjectID = "YzU-98-AMO"; */
+"YzU-98-AMO.title" = "Quit";
+
+/* Class = "NSMenuItem"; title = "Check For Updates..."; ObjectID = "agP-nD-lh8"; */
+"agP-nD-lh8.title" = "Check For Updates...";
+
+/* Class = "NSMenuItem"; title = "About"; ObjectID = "eHM-cf-OXV"; */
+"eHM-cf-OXV.title" = "About";
+
+/* Class = "NSMenuItem"; title = "Generate trojan plist"; ObjectID = "kDc-uA-WW9"; */
+"kDc-uA-WW9.title" = "Generate trojan plist";
+
+/* Class = "NSMenuItem"; title = "Global Mode"; ObjectID = "kON-lr-Rvq"; */
+"kON-lr-Rvq.title" = "Global Mode";
+
+/* Class = "NSMenuItem"; title = "Show Logs..."; ObjectID = "mtI-DK-rnv"; */
+"mtI-DK-rnv.title" = "Show Logs...";
+
+/* Class = "NSMenuItem"; title = "launch trojan plist"; ObjectID = "pKT-72-hhe"; */
+"pKT-72-hhe.title" = "launch trojan plist";
+
+/* Class = "NSMenuItem"; title = "Preferences"; ObjectID = "uuO-jo-Sgv"; */
+"uuO-jo-Sgv.title" = "设置";
+
+/* Class = "NSMenuItem"; title = "Status: Off"; ObjectID = "xOb-Mv-amH"; */
+"xOb-Mv-amH.title" = "Status: Off";

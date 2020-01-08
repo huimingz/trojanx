@@ -1,0 +1,761 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		23080B3223BB40EF009B426C /* proxy_conf_helper in Resources */ = {isa = PBXBuildFile; fileRef = 23228BBD23BB3FE100E217F6 /* proxy_conf_helper */; };
+		23080B3423BB4CE1009B426C /* install_proxy_conf_helper.sh in Resources */ = {isa = PBXBuildFile; fileRef = 23080B3323BB47CF009B426C /* install_proxy_conf_helper.sh */; };
+		230A102123BA054E004AA7CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230A102023BA054E004AA7CB /* AppDelegate.swift */; };
+		230A102323BA0550004AA7CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 230A102223BA0550004AA7CB /* Assets.xcassets */; };
+		230A102623BA0550004AA7CB /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 230A102423BA0550004AA7CB /* MainMenu.xib */; };
+		230A103823BA055F004AA7CB /* stop_privoxy.sh in Resources */ = {isa = PBXBuildFile; fileRef = 230A103023BA055F004AA7CB /* stop_privoxy.sh */; };
+		230A103923BA055F004AA7CB /* privoxy in Resources */ = {isa = PBXBuildFile; fileRef = 230A103123BA055F004AA7CB /* privoxy */; };
+		230A103A23BA055F004AA7CB /* start_privoxy.sh in Resources */ = {isa = PBXBuildFile; fileRef = 230A103223BA055F004AA7CB /* start_privoxy.sh */; };
+		230A103C23BA055F004AA7CB /* install_trojan.sh in Resources */ = {isa = PBXBuildFile; fileRef = 230A103523BA055F004AA7CB /* install_trojan.sh */; };
+		230A103D23BA055F004AA7CB /* start_trojan_service.sh in Resources */ = {isa = PBXBuildFile; fileRef = 230A103623BA055F004AA7CB /* start_trojan_service.sh */; };
+		230A103E23BA055F004AA7CB /* stop_trojan_service.sh in Resources */ = {isa = PBXBuildFile; fileRef = 230A103723BA055F004AA7CB /* stop_trojan_service.sh */; };
+		230A104623BA07B9004AA7CB /* MainMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230A104523BA07B9004AA7CB /* MainMenuController.swift */; };
+		230CB17223C066DB0043A536 /* TextFIeld.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230CB17123C066DB0043A536 /* TextFIeld.swift */; };
+		230CB17423C06F0C0043A536 /* PACURLFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230CB17323C06F0C0043A536 /* PACURLFormatter.swift */; };
+		230CB17623C06F190043A536 /* PACUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230CB17523C06F180043A536 /* PACUtils.swift */; };
+		230CB17823C06FE00043A536 /* privoxy.template.config in Resources */ = {isa = PBXBuildFile; fileRef = 230CB17723C06FE00043A536 /* privoxy.template.config */; };
+		230CB17A23C06FE30043A536 /* user-privoxy.config in Resources */ = {isa = PBXBuildFile; fileRef = 230CB17923C06FE30043A536 /* user-privoxy.config */; };
+		230CB17C23C06FF60043A536 /* user-rule.txt in Resources */ = {isa = PBXBuildFile; fileRef = 230CB17B23C06FF60043A536 /* user-rule.txt */; };
+		230CB18023C070090043A536 /* abp.js in Resources */ = {isa = PBXBuildFile; fileRef = 230CB17F23C070090043A536 /* abp.js */; };
+		231D0D5D23BB6505006C8BA3 /* PreferencePlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231D0D5C23BB6505006C8BA3 /* PreferencePlist.swift */; };
+		23228BAF23BB3B0100E217F6 /* ProxyConfHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23228BAE23BB3B0100E217F6 /* ProxyConfHelper.swift */; };
+		23228BC023BB3FE100E217F6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 23228BBF23BB3FE100E217F6 /* main.m */; };
+		2337715A23C20FE7007FC84E /* hash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2337715923C20FE7007FC84E /* hash.swift */; };
+		2337715C23C21034007FC84E /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2337715B23C21034007FC84E /* Data.swift */; };
+		233B1EAE23BEED9F002D0D9A /* PreferencesWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233B1EAC23BEED9F002D0D9A /* PreferencesWindow.swift */; };
+		233B1EAF23BEED9F002D0D9A /* PreferencesWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 233B1EAD23BEED9F002D0D9A /* PreferencesWindow.xib */; };
+		234DE6C523BA3C0100F41F88 /* TrojanScript.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234DE6C423BA3C0100F41F88 /* TrojanScript.swift */; };
+		23901C8323BB20190092E058 /* TrojanProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23901C8223BB20190092E058 /* TrojanProfile.swift */; };
+		23A717A923C075200016E259 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A717A823C075200016E259 /* String.swift */; };
+		23A717AC23C078D10016E259 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 23A717AE23C078D10016E259 /* Localizable.strings */; };
+		23A717B123C0B15C0016E259 /* gfwlist.txt in Resources */ = {isa = PBXBuildFile; fileRef = 23A717B023C0B15C0016E259 /* gfwlist.txt */; };
+		23A717B323C0B3410016E259 /* WIndow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A717B223C0B3410016E259 /* WIndow.swift */; };
+		23D024D823C2C99E0081EB4C /* UserRulesWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D024D623C2C99E0081EB4C /* UserRulesWindow.swift */; };
+		23D024D923C2C99E0081EB4C /* UserRulesWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23D024D723C2C99E0081EB4C /* UserRulesWindow.xib */; };
+		23D2A22B23BC36FF0056CA6C /* ServerPreferencesWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D2A22923BC36FF0056CA6C /* ServerPreferencesWindow.swift */; };
+		23D2A22C23BC36FF0056CA6C /* ServerPreferencesWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23D2A22A23BC36FF0056CA6C /* ServerPreferencesWindow.xib */; };
+		23D3C9CA23BA51A400686D66 /* trojan in Resources */ = {isa = PBXBuildFile; fileRef = 23D3C9C923BA51A400686D66 /* trojan */; };
+		23D3C9CC23BA53FA00686D66 /* config.json in Resources */ = {isa = PBXBuildFile; fileRef = 23D3C9CB23BA53FA00686D66 /* config.json */; };
+		9DF63FE8826664532E0055C4 /* libPods-proxy_conf_helper.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 07743135C14F021FF428F10E /* libPods-proxy_conf_helper.a */; };
+		D922CD8C4899472BD53DA01B /* Pods_TrojanX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 685DEB398EF717EF78F62E5D /* Pods_TrojanX.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		23080B3023BB4093009B426C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 230A101523BA054E004AA7CB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 23228BBC23BB3FE100E217F6;
+			remoteInfo = proxy_conf_helper;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		23228BBB23BB3FE100E217F6 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		07743135C14F021FF428F10E /* libPods-proxy_conf_helper.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-proxy_conf_helper.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		23080B2F23BB4023009B426C /* proxy_conf_helper_version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = proxy_conf_helper_version.h; sourceTree = "<group>"; };
+		23080B3323BB47CF009B426C /* install_proxy_conf_helper.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = install_proxy_conf_helper.sh; sourceTree = "<group>"; };
+		230A101D23BA054E004AA7CB /* TrojanX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrojanX.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		230A102023BA054E004AA7CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		230A102223BA0550004AA7CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		230A102523BA0550004AA7CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		230A102723BA0550004AA7CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		230A102823BA0550004AA7CB /* TrojanX.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TrojanX.entitlements; sourceTree = "<group>"; };
+		230A103023BA055F004AA7CB /* stop_privoxy.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = stop_privoxy.sh; sourceTree = "<group>"; };
+		230A103123BA055F004AA7CB /* privoxy */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = privoxy; sourceTree = "<group>"; };
+		230A103223BA055F004AA7CB /* start_privoxy.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = start_privoxy.sh; sourceTree = "<group>"; };
+		230A103523BA055F004AA7CB /* install_trojan.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = install_trojan.sh; sourceTree = "<group>"; };
+		230A103623BA055F004AA7CB /* start_trojan_service.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = start_trojan_service.sh; sourceTree = "<group>"; };
+		230A103723BA055F004AA7CB /* stop_trojan_service.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = stop_trojan_service.sh; sourceTree = "<group>"; };
+		230A104523BA07B9004AA7CB /* MainMenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuController.swift; sourceTree = "<group>"; };
+		230CB17123C066DB0043A536 /* TextFIeld.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFIeld.swift; sourceTree = "<group>"; };
+		230CB17323C06F0C0043A536 /* PACURLFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PACURLFormatter.swift; sourceTree = "<group>"; };
+		230CB17523C06F180043A536 /* PACUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PACUtils.swift; sourceTree = "<group>"; };
+		230CB17723C06FE00043A536 /* privoxy.template.config */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = privoxy.template.config; sourceTree = "<group>"; };
+		230CB17923C06FE30043A536 /* user-privoxy.config */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "user-privoxy.config"; sourceTree = "<group>"; };
+		230CB17B23C06FF60043A536 /* user-rule.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "user-rule.txt"; sourceTree = "<group>"; };
+		230CB17F23C070090043A536 /* abp.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = abp.js; sourceTree = "<group>"; };
+		231D0D5C23BB6505006C8BA3 /* PreferencePlist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencePlist.swift; sourceTree = "<group>"; };
+		231D0D5F23BB7679006C8BA3 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/MainMenu.strings"; sourceTree = "<group>"; };
+		23228BAE23BB3B0100E217F6 /* ProxyConfHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProxyConfHelper.swift; sourceTree = "<group>"; };
+		23228BBD23BB3FE100E217F6 /* proxy_conf_helper */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = proxy_conf_helper; sourceTree = BUILT_PRODUCTS_DIR; };
+		23228BBF23BB3FE100E217F6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2337715923C20FE7007FC84E /* hash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hash.swift; sourceTree = "<group>"; };
+		2337715B23C21034007FC84E /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		233B1EAC23BEED9F002D0D9A /* PreferencesWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesWindow.swift; sourceTree = "<group>"; };
+		233B1EAD23BEED9F002D0D9A /* PreferencesWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PreferencesWindow.xib; sourceTree = "<group>"; };
+		234DE6C423BA3C0100F41F88 /* TrojanScript.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrojanScript.swift; sourceTree = "<group>"; };
+		23901C8223BB20190092E058 /* TrojanProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrojanProfile.swift; sourceTree = "<group>"; };
+		23A717A823C075200016E259 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		23A717AD23C078D10016E259 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		23A717AF23C078D20016E259 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		23A717B023C0B15C0016E259 /* gfwlist.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = gfwlist.txt; sourceTree = "<group>"; };
+		23A717B223C0B3410016E259 /* WIndow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WIndow.swift; sourceTree = "<group>"; };
+		23D024D623C2C99E0081EB4C /* UserRulesWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRulesWindow.swift; sourceTree = "<group>"; };
+		23D024D723C2C99E0081EB4C /* UserRulesWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserRulesWindow.xib; sourceTree = "<group>"; };
+		23D2A22923BC36FF0056CA6C /* ServerPreferencesWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerPreferencesWindow.swift; sourceTree = "<group>"; };
+		23D2A22A23BC36FF0056CA6C /* ServerPreferencesWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ServerPreferencesWindow.xib; sourceTree = "<group>"; };
+		23D3C9C923BA51A400686D66 /* trojan */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = trojan; sourceTree = "<group>"; };
+		23D3C9CB23BA53FA00686D66 /* config.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = config.json; sourceTree = "<group>"; };
+		36215EFB7B2A68C6DA749FA1 /* Pods-TrojanX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrojanX.debug.xcconfig"; path = "Target Support Files/Pods-TrojanX/Pods-TrojanX.debug.xcconfig"; sourceTree = "<group>"; };
+		685DEB398EF717EF78F62E5D /* Pods_TrojanX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TrojanX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		936C01C7899A1B4732F6417A /* Pods-demo_02.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-demo_02.release.xcconfig"; path = "Target Support Files/Pods-demo_02/Pods-demo_02.release.xcconfig"; sourceTree = "<group>"; };
+		BE37C8733F7656E3465B347A /* Pods-proxy_conf_helper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-proxy_conf_helper.debug.xcconfig"; path = "Target Support Files/Pods-proxy_conf_helper/Pods-proxy_conf_helper.debug.xcconfig"; sourceTree = "<group>"; };
+		E297330AAD777304099D0B87 /* Pods-proxy_conf_helper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-proxy_conf_helper.release.xcconfig"; path = "Target Support Files/Pods-proxy_conf_helper/Pods-proxy_conf_helper.release.xcconfig"; sourceTree = "<group>"; };
+		E73B88072C3CC64210A6CF26 /* libPods-demo_02.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-demo_02.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E876890378EEF91E40153676 /* Pods-TrojanX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrojanX.release.xcconfig"; path = "Target Support Files/Pods-TrojanX/Pods-TrojanX.release.xcconfig"; sourceTree = "<group>"; };
+		FDADFE899F7B61B29C91B982 /* Pods-demo_02.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-demo_02.debug.xcconfig"; path = "Target Support Files/Pods-demo_02/Pods-demo_02.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		230A101A23BA054E004AA7CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D922CD8C4899472BD53DA01B /* Pods_TrojanX.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23228BBA23BB3FE100E217F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DF63FE8826664532E0055C4 /* libPods-proxy_conf_helper.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		230A101423BA054E004AA7CB = {
+			isa = PBXGroup;
+			children = (
+				230A101F23BA054E004AA7CB /* TrojanX */,
+				23228BBE23BB3FE100E217F6 /* proxy_conf_helper */,
+				230A101E23BA054E004AA7CB /* Products */,
+				23EBDA3923BA218600F5069E /* Frameworks */,
+				9297D957126499699499C222 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		230A101E23BA054E004AA7CB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				230A101D23BA054E004AA7CB /* TrojanX.app */,
+				23228BBD23BB3FE100E217F6 /* proxy_conf_helper */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		230A101F23BA054E004AA7CB /* TrojanX */ = {
+			isa = PBXGroup;
+			children = (
+				230CB17023C066CB0043A536 /* Ext */,
+				239FFAB823BE244E00C6F628 /* Maps */,
+				239FFAB723BE240500C6F628 /* Tools */,
+				239FFAB623BE236900C6F628 /* Models */,
+				2359418B23BA2ABA00FC6E09 /* Views */,
+				230A102E23BA055F004AA7CB /* Support Files */,
+				230A102023BA054E004AA7CB /* AppDelegate.swift */,
+				230A102223BA0550004AA7CB /* Assets.xcassets */,
+				230A102423BA0550004AA7CB /* MainMenu.xib */,
+				230A104523BA07B9004AA7CB /* MainMenuController.swift */,
+				230A102723BA0550004AA7CB /* Info.plist */,
+				230A102823BA0550004AA7CB /* TrojanX.entitlements */,
+				23A717AE23C078D10016E259 /* Localizable.strings */,
+			);
+			path = TrojanX;
+			sourceTree = "<group>";
+		};
+		230A102E23BA055F004AA7CB /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				230A102F23BA055F004AA7CB /* privoxy */,
+				230A103323BA055F004AA7CB /* trojan */,
+				23080B3323BB47CF009B426C /* install_proxy_conf_helper.sh */,
+				230CB17B23C06FF60043A536 /* user-rule.txt */,
+				23A717B023C0B15C0016E259 /* gfwlist.txt */,
+				230CB17F23C070090043A536 /* abp.js */,
+			);
+			path = "Support Files";
+			sourceTree = "<group>";
+		};
+		230A102F23BA055F004AA7CB /* privoxy */ = {
+			isa = PBXGroup;
+			children = (
+				230CB17723C06FE00043A536 /* privoxy.template.config */,
+				230CB17923C06FE30043A536 /* user-privoxy.config */,
+				230A103123BA055F004AA7CB /* privoxy */,
+				230A103223BA055F004AA7CB /* start_privoxy.sh */,
+				230A103023BA055F004AA7CB /* stop_privoxy.sh */,
+			);
+			path = privoxy;
+			sourceTree = "<group>";
+		};
+		230A103323BA055F004AA7CB /* trojan */ = {
+			isa = PBXGroup;
+			children = (
+				23D3C9CB23BA53FA00686D66 /* config.json */,
+				23D3C9C923BA51A400686D66 /* trojan */,
+				230A103523BA055F004AA7CB /* install_trojan.sh */,
+				230A103623BA055F004AA7CB /* start_trojan_service.sh */,
+				230A103723BA055F004AA7CB /* stop_trojan_service.sh */,
+			);
+			path = trojan;
+			sourceTree = "<group>";
+		};
+		230CB17023C066CB0043A536 /* Ext */ = {
+			isa = PBXGroup;
+			children = (
+				230CB17123C066DB0043A536 /* TextFIeld.swift */,
+				23A717A823C075200016E259 /* String.swift */,
+				23A717B223C0B3410016E259 /* WIndow.swift */,
+				2337715B23C21034007FC84E /* Data.swift */,
+			);
+			path = Ext;
+			sourceTree = "<group>";
+		};
+		23228BBE23BB3FE100E217F6 /* proxy_conf_helper */ = {
+			isa = PBXGroup;
+			children = (
+				23080B2F23BB4023009B426C /* proxy_conf_helper_version.h */,
+				23228BBF23BB3FE100E217F6 /* main.m */,
+			);
+			path = proxy_conf_helper;
+			sourceTree = "<group>";
+		};
+		2359418B23BA2ABA00FC6E09 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				23D2A22923BC36FF0056CA6C /* ServerPreferencesWindow.swift */,
+				23D2A22A23BC36FF0056CA6C /* ServerPreferencesWindow.xib */,
+				233B1EAC23BEED9F002D0D9A /* PreferencesWindow.swift */,
+				233B1EAD23BEED9F002D0D9A /* PreferencesWindow.xib */,
+				23D024D623C2C99E0081EB4C /* UserRulesWindow.swift */,
+				23D024D723C2C99E0081EB4C /* UserRulesWindow.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		239FFAB623BE236900C6F628 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				231D0D5C23BB6505006C8BA3 /* PreferencePlist.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		239FFAB723BE240500C6F628 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				234DE6C423BA3C0100F41F88 /* TrojanScript.swift */,
+				23228BAE23BB3B0100E217F6 /* ProxyConfHelper.swift */,
+				230CB17323C06F0C0043A536 /* PACURLFormatter.swift */,
+				230CB17523C06F180043A536 /* PACUtils.swift */,
+				2337715923C20FE7007FC84E /* hash.swift */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		239FFAB823BE244E00C6F628 /* Maps */ = {
+			isa = PBXGroup;
+			children = (
+				23901C8223BB20190092E058 /* TrojanProfile.swift */,
+			);
+			path = Maps;
+			sourceTree = "<group>";
+		};
+		23EBDA3923BA218600F5069E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				685DEB398EF717EF78F62E5D /* Pods_TrojanX.framework */,
+				07743135C14F021FF428F10E /* libPods-proxy_conf_helper.a */,
+				E73B88072C3CC64210A6CF26 /* libPods-demo_02.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9297D957126499699499C222 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				36215EFB7B2A68C6DA749FA1 /* Pods-TrojanX.debug.xcconfig */,
+				E876890378EEF91E40153676 /* Pods-TrojanX.release.xcconfig */,
+				BE37C8733F7656E3465B347A /* Pods-proxy_conf_helper.debug.xcconfig */,
+				E297330AAD777304099D0B87 /* Pods-proxy_conf_helper.release.xcconfig */,
+				FDADFE899F7B61B29C91B982 /* Pods-demo_02.debug.xcconfig */,
+				936C01C7899A1B4732F6417A /* Pods-demo_02.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		230A101C23BA054E004AA7CB /* TrojanX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 230A102B23BA0550004AA7CB /* Build configuration list for PBXNativeTarget "TrojanX" */;
+			buildPhases = (
+				8783E0A97F9C05E33B04BD67 /* [CP] Check Pods Manifest.lock */,
+				230A101923BA054E004AA7CB /* Sources */,
+				230A101A23BA054E004AA7CB /* Frameworks */,
+				230A101B23BA054E004AA7CB /* Resources */,
+				6A63BCF6882E41B5D87FEC7F /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				23080B3123BB4093009B426C /* PBXTargetDependency */,
+			);
+			name = TrojanX;
+			productName = TrojanX;
+			productReference = 230A101D23BA054E004AA7CB /* TrojanX.app */;
+			productType = "com.apple.product-type.application";
+		};
+		23228BBC23BB3FE100E217F6 /* proxy_conf_helper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 23228BC123BB3FE100E217F6 /* Build configuration list for PBXNativeTarget "proxy_conf_helper" */;
+			buildPhases = (
+				459FD185E1463A6938FA83C1 /* [CP] Check Pods Manifest.lock */,
+				23228BB923BB3FE100E217F6 /* Sources */,
+				23228BBA23BB3FE100E217F6 /* Frameworks */,
+				23228BBB23BB3FE100E217F6 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = proxy_conf_helper;
+			productName = proxy_conf_helper;
+			productReference = 23228BBD23BB3FE100E217F6 /* proxy_conf_helper */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		230A101523BA054E004AA7CB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = Sakurai;
+				TargetAttributes = {
+					230A101C23BA054E004AA7CB = {
+						CreatedOnToolsVersion = 11.3;
+					};
+					23228BBC23BB3FE100E217F6 = {
+						CreatedOnToolsVersion = 11.3;
+					};
+				};
+			};
+			buildConfigurationList = 230A101823BA054E004AA7CB /* Build configuration list for PBXProject "TrojanX" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"zh-Hans",
+			);
+			mainGroup = 230A101423BA054E004AA7CB;
+			productRefGroup = 230A101E23BA054E004AA7CB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				230A101C23BA054E004AA7CB /* TrojanX */,
+				23228BBC23BB3FE100E217F6 /* proxy_conf_helper */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		230A101B23BA054E004AA7CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				233B1EAF23BEED9F002D0D9A /* PreferencesWindow.xib in Resources */,
+				23080B3423BB4CE1009B426C /* install_proxy_conf_helper.sh in Resources */,
+				230CB17C23C06FF60043A536 /* user-rule.txt in Resources */,
+				23080B3223BB40EF009B426C /* proxy_conf_helper in Resources */,
+				23D3C9CA23BA51A400686D66 /* trojan in Resources */,
+				23A717AC23C078D10016E259 /* Localizable.strings in Resources */,
+				230CB17A23C06FE30043A536 /* user-privoxy.config in Resources */,
+				23D024D923C2C99E0081EB4C /* UserRulesWindow.xib in Resources */,
+				230A103C23BA055F004AA7CB /* install_trojan.sh in Resources */,
+				23D3C9CC23BA53FA00686D66 /* config.json in Resources */,
+				230A103A23BA055F004AA7CB /* start_privoxy.sh in Resources */,
+				230CB17823C06FE00043A536 /* privoxy.template.config in Resources */,
+				230A103D23BA055F004AA7CB /* start_trojan_service.sh in Resources */,
+				230CB18023C070090043A536 /* abp.js in Resources */,
+				23A717B123C0B15C0016E259 /* gfwlist.txt in Resources */,
+				230A103923BA055F004AA7CB /* privoxy in Resources */,
+				23D2A22C23BC36FF0056CA6C /* ServerPreferencesWindow.xib in Resources */,
+				230A103823BA055F004AA7CB /* stop_privoxy.sh in Resources */,
+				230A102323BA0550004AA7CB /* Assets.xcassets in Resources */,
+				230A103E23BA055F004AA7CB /* stop_trojan_service.sh in Resources */,
+				230A102623BA0550004AA7CB /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		459FD185E1463A6938FA83C1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-proxy_conf_helper-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6A63BCF6882E41B5D87FEC7F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TrojanX/Pods-TrojanX-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TrojanX/Pods-TrojanX-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TrojanX/Pods-TrojanX-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8783E0A97F9C05E33B04BD67 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TrojanX-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		230A101923BA054E004AA7CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				230A102123BA054E004AA7CB /* AppDelegate.swift in Sources */,
+				2337715C23C21034007FC84E /* Data.swift in Sources */,
+				23D024D823C2C99E0081EB4C /* UserRulesWindow.swift in Sources */,
+				23D2A22B23BC36FF0056CA6C /* ServerPreferencesWindow.swift in Sources */,
+				230CB17623C06F190043A536 /* PACUtils.swift in Sources */,
+				231D0D5D23BB6505006C8BA3 /* PreferencePlist.swift in Sources */,
+				230CB17223C066DB0043A536 /* TextFIeld.swift in Sources */,
+				23901C8323BB20190092E058 /* TrojanProfile.swift in Sources */,
+				23A717B323C0B3410016E259 /* WIndow.swift in Sources */,
+				23A717A923C075200016E259 /* String.swift in Sources */,
+				230CB17423C06F0C0043A536 /* PACURLFormatter.swift in Sources */,
+				233B1EAE23BEED9F002D0D9A /* PreferencesWindow.swift in Sources */,
+				23228BAF23BB3B0100E217F6 /* ProxyConfHelper.swift in Sources */,
+				2337715A23C20FE7007FC84E /* hash.swift in Sources */,
+				230A104623BA07B9004AA7CB /* MainMenuController.swift in Sources */,
+				234DE6C523BA3C0100F41F88 /* TrojanScript.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23228BB923BB3FE100E217F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23228BC023BB3FE100E217F6 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		23080B3123BB4093009B426C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 23228BBC23BB3FE100E217F6 /* proxy_conf_helper */;
+			targetProxy = 23080B3023BB4093009B426C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		230A102423BA0550004AA7CB /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				230A102523BA0550004AA7CB /* Base */,
+				231D0D5F23BB7679006C8BA3 /* zh-Hans */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		23A717AE23C078D10016E259 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				23A717AD23C078D10016E259 /* en */,
+				23A717AF23C078D20016E259 /* zh-Hans */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		230A102923BA0550004AA7CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		230A102A23BA0550004AA7CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		230A102C23BA0550004AA7CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 36215EFB7B2A68C6DA749FA1 /* Pods-TrojanX.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TrojanX/TrojanX.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = TrojanX/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.huimingz.TrojanX;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		230A102D23BA0550004AA7CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E876890378EEF91E40153676 /* Pods-TrojanX.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TrojanX/TrojanX.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = TrojanX/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.huimingz.TrojanX;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		23228BC223BB3FE100E217F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE37C8733F7656E3465B347A /* Pods-proxy_conf_helper.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		23228BC323BB3FE100E217F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E297330AAD777304099D0B87 /* Pods-proxy_conf_helper.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		230A101823BA054E004AA7CB /* Build configuration list for PBXProject "TrojanX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				230A102923BA0550004AA7CB /* Debug */,
+				230A102A23BA0550004AA7CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		230A102B23BA0550004AA7CB /* Build configuration list for PBXNativeTarget "TrojanX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				230A102C23BA0550004AA7CB /* Debug */,
+				230A102D23BA0550004AA7CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		23228BC123BB3FE100E217F6 /* Build configuration list for PBXNativeTarget "proxy_conf_helper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23228BC223BB3FE100E217F6 /* Debug */,
+				23228BC323BB3FE100E217F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 230A101523BA054E004AA7CB /* Project object */;
+}

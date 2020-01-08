@@ -1,0 +1,22 @@
+PODS:
+  - BRLOptionParser (0.3.1)
+  - GCDWebServer (3.5.3):
+    - GCDWebServer/Core (= 3.5.3)
+  - GCDWebServer/Core (3.5.3)
+
+DEPENDENCIES:
+  - BRLOptionParser (~> 0.3.1)
+  - GCDWebServer (~> 3.0)
+
+SPEC REPOS:
+  trunk:
+    - BRLOptionParser
+    - GCDWebServer
+
+SPEC CHECKSUMS:
+  BRLOptionParser: a03256a8ff003ca1f5376c55f55f210e085a3958
+  GCDWebServer: c0ab22c73e1b84f358d1e2f74bf6afd1c60829f2
+
+PODFILE CHECKSUM: c8afe232548d68c9168de6583d06351f0baba839
+
+COCOAPODS: 1.8.4

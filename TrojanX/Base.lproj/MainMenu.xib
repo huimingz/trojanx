@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="15702" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="15702"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
+            <connections>
+                <outlet property="delegate" destination="Voe-Tx-rLC" id="GzC-gU-4Uq"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="TrojanX" customModuleProvider="target">
+            <connections>
+                <outlet property="autoPacModeMenuItem" destination="Ce8-xR-7Tu" id="7Kz-DY-Inu"/>
+                <outlet property="globalMenuItem" destination="kON-lr-Rvq" id="AGt-HU-Gpu"/>
+                <outlet property="serverListMenuItem" destination="ULg-Ih-yFn" id="hPd-nI-Ihg"/>
+                <outlet property="serverProfilesBeginSeparatorMenuItem" destination="gYw-kU-hPO" id="HkJ-Hw-7M5"/>
+                <outlet property="serverProfilesEndSeparatorMenuItem" destination="g7W-4B-Jpc" id="1dq-VE-0cJ"/>
+                <outlet property="serviceStatus" destination="xOb-Mv-amH" id="riw-qb-Iaj"/>
+                <outlet property="statusMenu" destination="9bL-BU-cDA" id="vth-rm-j46"/>
+                <outlet property="trojanXServiceSwitch" destination="HG8-Xf-7Ap" id="MK5-98-zem"/>
+            </connections>
+        </customObject>
+        <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
+        <menu id="9bL-BU-cDA" customClass="MainMenuController" customModule="TrojanX" customModuleProvider="target">
+            <items>
+                <menuItem title="Status: Off" id="xOb-Mv-amH">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                </menuItem>
+                <menuItem title="Turn Trojan On" keyEquivalent="s" id="HG8-Xf-7Ap">
+                    <connections>
+                        <action selector="toggleRunning:" target="Voe-Tx-rLC" id="8T9-Q4-e6P"/>
+                    </connections>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="llL-TX-Bi5"/>
+                <menuItem title="Auto Mode By PAC" keyEquivalent="a" id="Ce8-xR-7Tu">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="selectAutoPACMode:" target="Voe-Tx-rLC" id="Kxc-QP-2NQ"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="Global Mode" keyEquivalent="g" id="kON-lr-Rvq">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="selectGlobalMode:" target="Voe-Tx-rLC" id="j3M-kD-eAL"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="Servers" id="ULg-Ih-yFn">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <menu key="submenu" title="Servers" id="VMB-nl-vfS">
+                        <items>
+                            <menuItem title="Server Preferences" id="XuO-fk-bud">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="showServerPreferencesWindow:" target="Voe-Tx-rLC" id="htK-yV-zbi"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="gYw-kU-hPO" userLabel="stert Separator"/>
+                            <menuItem isSeparatorItem="YES" id="g7W-4B-Jpc" userLabel="end Separator"/>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="Ujc-Qv-mp7"/>
+                <menuItem title="Preferences" keyEquivalent="," id="uuO-jo-Sgv">
+                    <connections>
+                        <action selector="showPreferencesWindow:" target="Voe-Tx-rLC" id="BPg-1F-e0q"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="Socks5 Proxy Export Line To PasteBoard" keyEquivalent="c" id="Qez-oZ-Yfc">
+                    <connections>
+                        <action selector="socks5ProxyExportToPastedBoard:" target="Voe-Tx-rLC" id="D7K-yW-iyY"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="Hot Update PAC Server" id="ZcQ-lA-jMx">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="clickHotUpdatePACServer:" target="Voe-Tx-rLC" id="gjm-Zg-ydI"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="Edit User Rules" id="Aad-uY-j9y">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="showEditUserRulesWindow:" target="Voe-Tx-rLC" id="qm4-3x-BOW"/>
+                    </connections>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="7ea-SV-7GT"/>
+                <menuItem title="Show Logs..." id="mtI-DK-rnv">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                </menuItem>
+                <menuItem title="Check For Updates..." id="agP-nD-lh8">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                </menuItem>
+                <menuItem title="Help" id="Fbt-jf-Jyn">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                </menuItem>
+                <menuItem title="About" id="eHM-cf-OXV">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                </menuItem>
+                <menuItem title="Generate trojan plist" hidden="YES" enabled="NO" id="kDc-uA-WW9">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="demoGenerateTrojanPlist:" target="Voe-Tx-rLC" id="Dp0-gv-B9B"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="launch trojan plist" hidden="YES" enabled="NO" id="pKT-72-hhe">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="demoLaunchTrojanService:" target="Voe-Tx-rLC" id="CXj-dN-R6i"/>
+                    </connections>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="hea-HB-mFf"/>
+                <menuItem title="Quit" keyEquivalent="q" id="YzU-98-AMO">
+                    <connections>
+                        <action selector="terminate:" target="-2" id="SIP-Z9-40j"/>
+                    </connections>
+                </menuItem>
+            </items>
+            <point key="canvasLocation" x="-162" y="-105"/>
+        </menu>
+    </objects>
+</document>

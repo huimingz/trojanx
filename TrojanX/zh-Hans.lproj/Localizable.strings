@@ -1,0 +1,20 @@
+/* 
+  Localizable.strings
+  TrojanX
+
+  Created by Sakurai on 2020/01/04.
+  Copyright © 2020 Sakurai. All rights reserved.
+*/
+
+"Success" = "Success";
+"TrojanX | trojan is running." = "TrojanX | 启动代理trojan服务";
+"TrojanX | stop trojan service sucess." = "TrojanX | 停用trojan代理服务";
+
+// From AppDelegate.swift
+"Success" = "Success";
+"Update PAC file and restart PAC server" = "Update PAC file and restart PAC server";
+
+// From UserRulesWindow.swift
+"field" = "failed";
+"Save content to file." = "Save content to file.";
+"Can't save content to file, message: \(error)." = "Can't save content to file, message: \(error).";
