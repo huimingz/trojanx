@@ -49,6 +49,10 @@ class UserRulesWindow: NSWindowController, NSWindowDelegate {
                 try content.write(to: URL(fileURLWithPath: PACUserRuleFilePath), atomically: true, encoding: .utf8)
                 self.userRulesMd5_Old = userRulesMd5_new
                 
+                let _ = GeneratePACFile()
+                ProxyConfHelper.turnDownProxyMode()
+                ProxyConfHelper.autoProxy()
+                
                 let notify = NSUserNotification()
                 notify.title = "Success".localized
                 notify.informativeText = "Save content to file.".localized
@@ -62,6 +66,8 @@ class UserRulesWindow: NSWindowController, NSWindowDelegate {
                 notify.soundName = NSUserNotificationDefaultSoundName
                 NSUserNotificationCenter.default.deliver(notify)
             }
+        } else {
+            self.window?.performClose(self)
         }
     }
     

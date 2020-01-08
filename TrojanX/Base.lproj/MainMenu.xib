@@ -74,7 +74,7 @@
                         <action selector="socks5ProxyExportToPastedBoard:" target="Voe-Tx-rLC" id="D7K-yW-iyY"/>
                     </connections>
                 </menuItem>
-                <menuItem title="Hot Update PAC Server" id="ZcQ-lA-jMx">
+                <menuItem title="Hot Update PAC Server" hidden="YES" enabled="NO" id="ZcQ-lA-jMx">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>
                         <action selector="clickHotUpdatePACServer:" target="Voe-Tx-rLC" id="gjm-Zg-ydI"/>
