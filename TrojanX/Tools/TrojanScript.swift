@@ -13,7 +13,7 @@ import Cocoa
 let APP_SCRIPT_DIR = "/Library/Application Scripts/"
 let LAUNCH_AGENT_CONF_TROJAN = "com.huimingz.TrojanX.trojan.plist"
 let TROJAN_CONF_NAME = "trojan_config.json"
-let TROJAN_LOG_FILE = "/Users/sakurai/Library/Logs/trojan.log"
+let TROJAN_LOG_FILE = "/Library/Logs/trojan.log"
 
 var trojanTask: Process?
 
@@ -72,10 +72,11 @@ func startTrojan() {
     let app_support_dir = NSSearchPathForDirectoriesInDomains(.applicationSupportDirectory, .userDomainMask, true).first!
     let script_path = Bundle.main.path(forResource: "trojan", ofType: nil)!
     let config_path = app_support_dir + "/" + Bundle.appName() + "/" + TROJAN_CONF_NAME
+    let log_file_path = NSHomeDirectory() + TROJAN_LOG_FILE
     
     trojanTask = Process()
     trojanTask?.launchPath = script_path
-    trojanTask?.arguments = ["-c", config_path, "-l", TROJAN_LOG_FILE]
+    trojanTask?.arguments = ["-c", config_path, "-l", log_file_path]
 //     trojanTask?.arguments = ["-c", config_path]
     trojanTask?.launch()
 //    trojanTask?.terminationHandler = {
